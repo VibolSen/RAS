@@ -34,6 +34,5 @@ function encryptCaesar() {
   const text = document.getElementById("caesar-input").value;
   const shift = parseInt(document.getElementById("encryptionKey").value, 10);
   const encrypted = caesarEncrypt(text, shift);
-  document.getElementById("caesar-output").innerText =
-    "Encrypted: " + encrypted;
+  document.getElementById("caesar-output").innerText = encrypted;
 }
